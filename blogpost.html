@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: orange;
+        }
+        h1::first-letter {
+            font-size: 2em;
+            color: rgb(250, 3, 3);
+        }
+
+          
+    .m1::first-letter {
+        font-size: 2em;
+        color: rgb(255, 0, 0);
+    }
+    .m1 {color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+    .m2::first-line {
+        font-size: 1.2em;
+        font-weight: bold;}
+        .m2::first-letter{
+            font-size: 2em;
+            color: rgb(250, 3, 3);
+        }
+        .m2{color: white;}
+     .m3::before {
+        content: "“";
+        font-size: 2em;
+        color: rgb(0, 72, 255);
+        position: relative;
+        left: -10px;
+    }
+    .m3::after{
+        content: "”";
+        font-size: 2em;
+        color: rgb(0, 72, 255);
+        position: relative;
+        right: -10px;
+    }
+    .m3{color: white;}
+    .m4{
+        border: 0px solid #ffa500; 
+        width: 60px;
+        padding: 10px;
+        text-align: center;
+        margin-left: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: #ffebcd;
+        color: #ffa500;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        
+    }
+    .m5{
+        border: 0px solid orange; 
+        width: 80px;
+        padding: 10px;
+        text-align: center;
+        margin-left: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: blanchedalmond;
+        color: orange;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        
+    }
+    .m6{
+        color: white;
+        margin-top: 30px;
+        line-height: 1.6;
+    }
+    a{
+        color: orange;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(245, 10, 10);
+    }
+    a:visited {
+        color: purple;
+    }
+    .m4 + .m5 {
+        background-color:  #ffebcd;
+        color: #ffa500;
+}
+    body{ 
+        background:linear-gradient(to left, #850606e5, #000000);
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        padding: 20px;
+    }
+     
+    </style>
+</head>
+<body>
+    <h1>Tech Trends Alpha</h1>
+    <p class="m1">By Kanjiro</p>
+    <p class="m2">  AI, quantum computing, and sustainable tech are reshaping the future faster than ever. <br> Artificial intelligence continues to evolve, powering everything from personalized healthcare to autonomous vehicles. Quantum computing, once a theoretical concept, is now unlocking new possibilities in cryptography and complex problem-solving. 
+</p>
+<blockquote class="m3">Complexity is easy. Simplicity is hard.</blockquote>
+<p class="m6">Meanwhile, sustainability is no longer a buzzword—it's a driving force behind innovation, with green technologies transforming energy, agriculture, and manufacturing. As we move into 2025, the convergence of these trends promises to redefine how we live, work, and interact with the world around us. <a href="">Read more</a> </p>
+
+<h4 class="m4">Tech</h4>
+<h4 class="m5">Trends</h4>
+
+    
+</body>
+</html>
