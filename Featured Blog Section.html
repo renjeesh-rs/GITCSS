@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {margin: 0,padding: 0;}
+    .cars{
+        display: flex;
+    }
+    .divo{
+        border: 2px solid black;
+        border-radius: 0px 50px 0px 50px;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow: 5px 5px 5px 5px black;
+        background:linear-gradient(to left, grey 50%, black 50%);
+    }
+    .huayra{
+        border: 2px solid black;
+        border-radius: 0px 50px 0px 50px;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow:5px 5px 5px 5px black;
+        background:linear-gradient(to left, blue 50%, black 50%);
+    }
+    .jesko{
+        border: 2px solid black;
+        border-radius: 0px 50px 0px 50px;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow:5px 5px 5px 5px black;
+        background:linear-gradient(to left, rgb(255, 89, 0) 50% , black 50%);
+    }
+    .h1{
+        font-family:serif;
+        font-size: 28px;
+        letter-spacing:3px ;
+        word-spacing:100px ;
+        color:whitesmoke;
+        text-align:left ;
+        margin-bottom: 10px;
+    }
+    .h2{
+        font-family:serif;
+        font-size: 28px;
+        letter-spacing:2px ;
+        word-spacing:120px ;
+        color:whitesmoke;
+        text-align:left ;
+        margin-bottom: 10px;
+    }
+    .h3{
+        font-family:serif;
+        font-size: 28px;
+        letter-spacing:2px ;
+        word-spacing:40px ;
+        color:whitesmoke;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    img[src$=".jpg"] {
+       border:2px solid black;
+       border-radius: 0px 50px 0px 50px;
+       box-shadow:2px 2px 2px 2px black;
+       margin: 0 auto;
+    }
+    .divo p{
+        color:white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .huayra p{
+        color:white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .jesko p{
+        color:white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .cars span{ color:black ;}
+    .cars a{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+    }
+    a:hover{
+        color:rgb(255, 7, 7);
+       
+    }
+    a:visited{
+        color:rgb(0, 255, 255);
+    }
+    a[href^="https"] {
+        color: red;
+    }
+    
+    body{
+        background-color:black;
+    }
+    @media only screen and (max-width:600px){
+        body {
+            background-color:lightyellow;
+        }
+    }
+    @media only screen and (orientation: landscape) {
+        body {
+    background:linear-gradient(to right ,black 20%,blue, rgb(255, 89, 0) 90%);
+    }
+       }
+    @media only screen and (max-width: 600px) {
+    .cars {
+    flex-direction: column;
+    margin: 0 auto;
+     }
+    .cars h2  {
+    font-size: 22px;
+    }
+    .cars p{
+        font-size: 16px;
+    }
+    .cars img{
+        width: 300px;
+        height: 200px;
+        margin-left:30px;
+    }
+    .cars div{
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 2px 2px black;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .h1{
+        word-spacing: 60px;
+    
+    } 
+    .h2{
+        word-spacing: 90px;
+    
+    }
+    .h3{
+        word-spacing: 14px;
+    
+    }
+    } 
+
+  
+
+    </style>
+</head>
+<body>
+    <div class="cars">
+        <div class="divo">
+            <h2 class="h1">BUGATTI <span> DIVO </span></h2>
+            <img src="https://www.topgear-magazine.fr/wp-content/uploads/2020/08/bugatti_divo_essai_18.jpg" alt="Image" width="450" height="250">
+            <p>The top speed of the Bugatti Divo is 236mph(380 km/h) <br> <a href="">Read More</a> </p>
+        </div>
+        <div class="huayra">
+            <h2 class="h2">PAGANI <span> HUAYRA </span></h2>
+            <img src="https://images2.alphacoders.com/698/698899.jpg" alt="Image" width="450" height="250">
+            <p>The Pagani Huayra has a top speed of 383km/h(238 mph) <br> <a href="">Read More</a> </p>
+        </div>
+        <div class="jesko">
+            <h2 class="h3">KOENIGSEGG <span> JESKO </span></h2>
+            <img src="https://i.gaw.to/content/photos/48/00/480075-la-koenigsegg-jesko-a-4-millions-est-enfin-prete.jpg" alt="Image" width="450" height="250">
+            <p>The top speed of Koenigsegg Jesko is 500km/h(310 mph) <br> <a href="">Read More</a> </p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
